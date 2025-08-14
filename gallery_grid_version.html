@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 16px;
+      background-color: #222;
+    }
+
+    .header h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+      color: #f1f1f1;
+    }
+
+    .header p {
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .column img:hover {
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>FOOD GALLERY</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img src="all photos/IMG_4486.jpg">
+    <img src="all photos/IMG_4734.jpg">
+    <img src="all photos/IMG_4831.jpg">
+  </div>
+  <div class="column">
+    <img src="all photos/IMG_4853.jpg">
+    <img src="all photos/IMG_4979.jpg">
+    <img src="all photos/IMG_5239.jpg">
+  </div>
+  <div class="column">
+    <img src="all photos/IMG_5787.jpg">
+    <img src="all photos/IMG_5993.jpg">
+    <img src="all photos/IMG_6006.jpg">
+  </div>
+  <div class="column">
+    <img src="all photos/IMG_6127.jpg">
+    <img src="all photos/IMG_4734.jpg">
+    <img src="all photos/IMG_7307.jpg">
+  </div>
+</div>
+
+</body>
+</html>
